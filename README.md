@@ -7,6 +7,7 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -30,6 +31,10 @@ Users should be able to:
 
 #### Mobile
 ![](./screenshots/mobile-screenshot.jpg)
+
+### Link
+
+- Live Site URL: [GitHub Pages](https://sebastian-agrano.github.io/frontend-mentor-chat-app-css-illustration/)
 
 ## My process
 
