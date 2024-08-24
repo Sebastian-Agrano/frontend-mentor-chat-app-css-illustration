@@ -23,14 +23,14 @@ Users should be able to:
 
 ### Screenshot
 
-#### Deskop
-![](./screenshots/deskop-screenshot.jpg)
+#### Deskop 1440px
+![](./screenshots/deskop-screenshot.png)
 
-#### Tablet
-![](./screenshots/tablet-screenshot.jpg)
+#### Tablet 768px
+![](./screenshots/tablet-screenshot.png)
 
-#### Mobile
-![](./screenshots/mobile-screenshot.jpg)
+#### Mobile 375px
+![](./screenshots/mobile-screenshot.png)
 
 ### Link
 
