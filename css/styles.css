@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+/* Rooteo de variables */
+:root {
+  --color-title: hsl(271, 36%, 24%);
+  --color-subtitle: hsl(270, 7%, 64%);
+  --color-contact-info: hsl(276, 100%, 81%);
+  --color-contact-chat: hsl(276, 55%, 52%);
+  --color-user-chat: hsl(271, 15%, 43%);
+  --color-bg-contact-chat: hsla(293, 65%, 83%, 0.274);
+  --color-bg-user-chat: white;
+  --color-gradient-1: hsl(293, 100%, 63%);
+  --color-gradient-2: hsl(264, 100%, 61%);
+  --color-bg: hsl(270, 20%, 96%);
+  --color-radio-button-border: hsl(289, 100%, 72%);
+
+  --primary-font: "Rubik", sans-serif;
+}
+
+/* Reseteo de variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--primary-font);
+}
+
+/* Variables generales */
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 7.2rem 0 4.8rem;
+  background-color: var(--color-bg);
+}
+
+.bg-dark-shape {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 50%;
+  border-radius: 0 0 500px 0;
+  background: linear-gradient(
+    45deg,
+    var(--color-gradient-2) 30%,
+    var(--color-gradient-1)
+  );
+}
+
+.bg-light-shape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 52%;
+  border-radius: 500px 0 0 0;
+  background-color: var(--color-contact-info);
+  opacity: 0.1;
+}
+
+.mobile {
+  position: relative;
+  width: 65%;
+  min-width: 24.4rem;
+  max-width: 26rem;
+  height: max-content;
+  min-height: 49.7rem;
+  border: 0.9rem solid white;
+  border-radius: 3rem;
+  overflow: hidden;
+  background: var(--color-bg);
+  box-shadow: 0.5rem 1.1rem 3rem rgba(0, 0, 0, 0.24);
+}
+
+.mobile-bar {
+  position: absolute;
+  top: -0.9rem;
+  left: 0;
+  right: 0;
+  width: 55%;
+  height: 2.7rem;
+  margin: auto;
+  border-radius: 50px;
+  background: white;
+}
+
+.mobile-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.9rem 1.1rem 1.1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+  background: linear-gradient(
+    to left,
+    var(--color-gradient-1),
+    var(--color-gradient-2)
+  );
+}
+
+.mobile-contact > div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mobile-contact img {
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.mobile-contact span {
+  font-size: 1.1rem;
+}
+
+.mobile-contact-info h3 {
+  margin-bottom: 2px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.mobile-contact-info p {
+  font-size: 0.8rem;
+  color: var(--color-contact-info);
+}
+
+.mobile-chat-container {
+  padding: 0.8rem;
+}
+
+.mobile-chat {
+  width: max-content;
+  max-width: 60%;
+  margin-bottom: 0.8rem;
+  padding: 0.8rem 0.9rem 0.8rem 0.8rem;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+
+.chat-contact {
+  border-radius: 1.1rem 1.1rem 1.1rem 0.3rem;
+  color: var(--color-contact-chat);
+  background-color: var(--color-bg-contact-chat);
+}
+
+.chat-user {
+  margin-left: auto;
+  border-radius: 1.1rem 1.1rem 0.3rem;
+  color: var(--color-user-chat);
+  background-color: var(--color-bg-user-chat);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.103);
+}
+
+.chat-pictures {
+  display: flex;
+  justify-content: end;
+  gap: 0.8rem;
+  margin: 1.6rem 0 0.8rem;
+}
+
+.chat-pictures img {
+  width: 4.2rem;
+  border-radius: 1rem;
+}
+
+.chat-promotion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  padding: 0.9rem;
+  margin-bottom: 0.8rem;
+  border-radius: 1.1rem 1.1rem 1.1rem 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.688);
+  background: linear-gradient(
+    to right,
+    var(--color-gradient-1),
+    var(--color-gradient-2)
+  );
+}
+
+.chat-promotion input {
+  display: none;
+}
+
+.chat-promotion label {
+  position: relative;
+  margin-left: 2.1rem;
+}
+
+.chat-promotion p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.chat-promotion label::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -20px;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--color-radio-button-border);
+  border-radius: 50px;
+}
+
+.chat-promotion input:checked + label::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -20px;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--radio-button-borde);
+  border-radius: 50px;
+  background-color: white;
+}
+
+.chat-submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem 0.5rem 1.6rem;
+  border-radius: 50px;
+  background-color: var(--color-bg-user-chat);
+}
+
+::placeholder {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.chat-submit input {
+  width: 70%;
+  border: 0;
+  outline: none;
+}
+
+.chat-submit button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  background-color: var(--color-title);
+  cursor: pointer;
+}
+
+.chat-submit button:hover {
+  background-color: var(--color-contact-chat);
+}
+
+.chat-submit button span {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.mobile-chat,
+.chat-pictures,
+.chat-promotion {
+  opacity: 0;
+  animation-name: show-chat;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.chat-1 {
+  animation-delay: 0.5s;
+}
+
+.chat-2 {
+  animation-delay: 0.9s;
+}
+
+.chat-3 {
+  animation-delay: 1.5s;
+}
+
+.chat-4 {
+  animation-delay: 1.9s;
+}
+.chat-5 {
+  animation-delay: 2.3s;
+}
+
+.chat-6 {
+  animation-delay: 2.9s;
+}
+
+.chat-7 {
+  animation-delay: 3.3s;
+}
+
+.chat-8 {
+  animation-delay: 3.7s;
+}
+
+.text-container {
+  z-index: 1;
+  text-align: center;
+}
+
+.title {
+  margin: 6rem 0 3rem;
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--color-title);
+}
+
+.subtitle {
+  width: 30rem;
+  margin: 0 3.5rem 6.4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  color: var(--color-subtitle);
+}
+
+/* Medias queries */
+@media (width > 900px) {
+  html {
+    font-size: 79%;
+  }
+}
+
+@media (width > 1100px) {
+  main {
+    flex-direction: row;
+    padding: initial;
+    overflow: hidden;
+  }
+
+  .bg-dark-shape {
+    left: -120px;
+    width: 35%;
+    height: 83%;
+    border-radius: 0 0 500px 500px;
+  }
+
+  .bg-light-shape {
+    right: -120px;
+    width: 35%;
+    height: 75%;
+    border-radius: 500px 500px 0 0;
+  }
+
+  .mobile {
+    max-width: 310px;
+  }
+
+  .text-container {
+    margin-left: 130px;
+    text-align: initial;
+  }
+
+  .subtitle {
+    width: 555px;
+    margin: initial;
+  }
+}
+
+/* Animaciones */
+@keyframes show-chat {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

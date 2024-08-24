@@ -1,76 +1,89 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Mentor</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Chat app CSS illustration</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="img/favicon-32x32.png"
+      type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet" />
+  </head>
+  <body>
     <main>
-        <div class="figura-fondo fondo-claro"></div>
-        <div class="figura-fondo fondo-oscuro"></div>
-        <div class="celular">
-            <div class="celular-parlante"></div>
-            <div class="celular-contacto">
-                <span class="material-icons-outlined">arrow_back_ios</span>
-                <img src="img/avatar.jpg" alt="Foto de perfil">
-                <div class="celular-contacto-informacion">
-                    <h3>Samuel Green</h3>
-                    <p>Available to Walk</p>
-                </div>
-                <span class="material-icons-outlined tres-puntos">more_vert</span>
+      <div class="bg-dark-shape"></div>
+      <div class="bg-light-shape"></div>
+      <div class="mobile">
+        <div class="mobile-bar"></div>
+        <div class="mobile-contact">
+          <div>
+            <span class="material-icons-outlined">arrow_back_ios</span>
+            <img src="img/avatar.jpg" alt="Foto de perfil" />
+            <div class="mobile-contact-info">
+              <h3>Samuel Green</h3>
+              <p>Available to Walk</p>
             </div>
-            <div class="celular-contenedor-chats">
-                <div class="celular-chat chat-contacto chat-1">
-                    <p>That sounds great. I'd be happy with that.</p>
-                </div>
-                <div class="celular-chat chat-contacto chat-2">
-                    <p>Could you send over some pictures of your dog, please?</p>
-                </div>
-                <div class="celular-contenedor-imagenes chat-3">
-                    <img src="img/dog-image-1.jpg" alt="Imagen perro 1">
-                    <img src="img/dog-image-2.jpg" alt="Imagen perro 2">
-                    <img src="img/dog-image-3.jpg" alt="Imagen perro 3">
-                </div>
-                <div class="celular-chat chat-usuario chat-4">
-                    <p>Here are a few pictures. She's a happy girl!</p>
-                </div>
-                <div class="celular-chat chat-usuario chat-5">
-                    <p>Can you make it?</p>
-                </div>
-                <div class="celular-chat chat-contacto chat-6">
-                    <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-                </div>
-                <form action="" method="get">
-                    <div class="celular-promocion chat-7">
-                        <input type="radio" name="selector" id="boton1">
-                        <label for="boton1">30 minutes walk</label>
-                        <p class="precio">$29</p>
-                    </div>
-                    <div class="celular-promocion chat-8">
-                        <input type="radio" name="selector" id="boton2">
-                        <label for="boton2">1 hour walk</label>
-                        <p class="precio">$49</p>
-                    </div>
-                    <div class="celular-mensaje">
-                        <input type="text" placeholder="Type a message...">
-                        <button type="submit" >
-                            <span class="material-icons-outlined">navigate_next</span>
-                        </button>
-                    </div>
-                </form>
-            </div>
+          </div>
+          <span class="material-icons-outlined">more_vert</span>
         </div>
-        <div class="texto-principal">
-            <h1>Simple booking</h1>
-            <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make booking. Once the walk has been completed you can rate
-                your walker and book againall through the chat.
+        <div class="mobile-chat-container">
+          <div class="mobile-chat chat-contact chat-1">
+            <p>That sounds great. I'd be happy with that.</p>
+          </div>
+          <div class="mobile-chat chat-contact chat-2">
+            <p>Could you send over some pictures of your dog, please?</p>
+          </div>
+          <div class="chat-pictures chat-3">
+            <img src="img/dog-image-1.jpg" alt="Imagen perro 1" />
+            <img src="img/dog-image-2.jpg" alt="Imagen perro 2" />
+            <img src="img/dog-image-3.jpg" alt="Imagen perro 3" />
+          </div>
+          <div class="mobile-chat chat-user chat-4">
+            <p>Here are a few pictures. She's a happy girl!</p>
+          </div>
+          <div class="mobile-chat chat-user chat-5">
+            <p>Can you make it?</p>
+          </div>
+          <div class="mobile-chat chat-contact chat-6">
+            <p>
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
             </p>
+          </div>
+          <form action="" method="get">
+            <div class="chat-promotion chat-7">
+              <input type="radio" name="selector" id="button1" />
+              <label for="button1">30 minutes walk</label>
+              <p class="price">$29</p>
+            </div>
+            <div class="chat-promotion chat-8">
+              <input type="radio" name="selector" id="button2" />
+              <label for="button2">1 hour walk</label>
+              <p class="price">$49</p>
+            </div>
+            <div class="chat-submit">
+              <input type="text" placeholder="Type a message..." />
+              <button type="submit">
+                <span class="material-icons-outlined">navigate_next</span>
+              </button>
+            </div>
+          </form>
         </div>
+      </div>
+      <div class="text-container">
+        <h1 class="title">Simple booking</h1>
+        <h2 class="subtitle">
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make booking. Once the walk
+          has been completed you can rate your walker and book againall through
+          the chat.
+        </h2>
+      </div>
     </main>
-</body>
+  </body>
 </html>
